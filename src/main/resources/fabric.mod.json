@@ -9,8 +9,7 @@
     "Sunskimmer82#6969"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Sunskimmer822/Serenas-QOLMod"
   },
 
   "license": "CC0-1.0",
@@ -19,7 +18,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.serenas.qolmod.QOLMod"
+    ],
+    "client": [
+      "com.serenas.qolmod.QOLModClient"
     ]
   },
 
@@ -29,8 +31,5 @@
     "minecraft": "~1.19",
     "java": ">=17",
     "fabric-key-binding-api-v1": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
