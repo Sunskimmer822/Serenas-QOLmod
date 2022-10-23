@@ -3,10 +3,10 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Serena's QoLmod",
+  "description": "A collection of a few QoL (Quality of Life) features that I wish were in minecraft.",
   "authors": [
-    "Me!"
+    "Sunskimmer82#6969"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -22,15 +22,13 @@
       "net.fabricmc.example.ExampleMod"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "fabric-key-binding-api-v1": "*"
   },
   "suggests": {
     "another-mod": "*"
