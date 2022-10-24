@@ -1,9 +1,11 @@
 package com.serenas.qolmod;
 
+import org.lwjgl.glfw.GLFW;
+
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.option.KeyBinding;
-import net.minecraft.text.Text;
+import net.minecraft.client.util.InputUtil;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 
 public class QOLModClient implements ClientModInitializer {
@@ -16,9 +18,9 @@ public class QOLModClient implements ClientModInitializer {
 
         
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-        if (keyBinding.wasPressed()) {
-            client.player.sendMessage(Text.literal("Key 1 was pressed!"), false);
-            }
+        while (keyBinding.wasPressed()) {
+            
+        }
         });
     }
 }
