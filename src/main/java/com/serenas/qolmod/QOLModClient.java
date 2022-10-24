@@ -8,8 +8,6 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 
-import com.serenas.qolmod.QOLMod;
-
 public class QOLModClient implements ClientModInitializer {
     
     private static KeyBinding pickToolBind = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.pickTool",InputUtil.Type.MOUSE,GLFW.GLFW_MOUSE_BUTTON_5,"category.qolmod.QoL")); 
@@ -17,7 +15,11 @@ public class QOLModClient implements ClientModInitializer {
     private static KeyBinding align90deg = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignToNinetyDegrees",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_H,"category.qolmod.QoL")); 
     private static KeyBinding align180deg = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignToHundredEightyDegrees",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_V,"category.qolmod.QoL")); 
     private static KeyBinding align270deg = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignToTwoSeventyDegrees",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_B,"category.qolmod.QoL")); 
-    
+    private static KeyBinding pitch0 = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignTo0Pitch",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_J,"category.qolmod.QoL"));
+    private static KeyBinding pitchneg45 = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignTo-45Pitch",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_N,"category.qolmod.QoL"));
+    private static KeyBinding pitch45 = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.qolmod.alignTo45Pitch",InputUtil.Type.KEYSYM,GLFW.GLFW_KEY_M,"category.qolmod.QoL"));
+
+
     @Override
     public void onInitializeClient() {
 
@@ -40,7 +42,19 @@ public class QOLModClient implements ClientModInitializer {
         }
         while (align270deg.wasPressed()) {
             client.player.setYaw(270f);
-            QOLMod.LOGGER.info("Aligned to 0 degrees");
+            QOLMod.LOGGER.info("Aligned to 270 degrees");
+        }
+        while (pitch0.wasPressed()) {
+            client.player.setPitch(0f);
+            QOLMod.LOGGER.info("Pitched to 0 degrees");
+        }
+        while (pitchneg45.wasPressed()) {
+            client.player.setPitch(-45f);
+            QOLMod.LOGGER.info("Pitched to -45 degrees");
+        }
+        while (pitch45.wasPressed()) {
+            client.player.setPitch(45f);
+            QOLMod.LOGGER.info("Pitched to 45 degrees");
         }
         });
     }

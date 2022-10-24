@@ -1,0 +1,11 @@
+{
+    "category.qolmod.QoL": "Serena's QoL Mod",
+    "key.qolmod.pickTool": "Pick Tool Key",
+    "key.qolmod.alignToZeroDegrees": "0 Degrees Yaw",
+    "key.qolmod.alignToNinetyDegrees": "90 Degrees Yaw",
+    "key.qolmod.alignToHundredEightyDegrees": "180 Degrees Yaw",
+    "key.qolmod.alignToTwoSeventyDegrees": "270 Degrees Yaw",
+    "key.qolmod.alignTo0Pitch": "0 Degrees Pitch",
+    "key.qolmod.alignTo-45Pitch": "45 Degrees Up Pitch",
+    "key.qolmod.alignTo45Pitch": "45 Degrees Down Pitch"
+}
