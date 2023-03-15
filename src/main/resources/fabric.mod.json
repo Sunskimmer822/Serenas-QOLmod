@@ -24,12 +24,17 @@
       "com.serenas.qolmod.QOLModClient"
     ]
   },
+  "mixins": [
+    "qolmod.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
-    "minecraft": "~1.19",
+    "minecraft": "1.19.3",
     "java": ">=17",
     "fabric-key-binding-api-v1": "*"
-  }
+  },
+
+  "accesswidener": "qolmod.accesswidener"
 }

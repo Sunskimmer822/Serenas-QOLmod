@@ -8,5 +8,5 @@
     "key.qolmod.alignTo0Pitch": "0 Degrees Pitch",
     "key.qolmod.alignTo-45Pitch": "45 Degrees Up Pitch",
     "key.qolmod.alignTo45Pitch": "45 Degrees Down Pitch",
-    "key.qolmod.knockKnockWhosThere": "Rendered Players Info"
+    "key.qolmod.toggleRangefinder": "Toggle Rangefinder"
 }

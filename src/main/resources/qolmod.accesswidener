@@ -1,0 +1,2 @@
+accesswidener   v1  named
+accessible  method  net/minecraft/client/gui/hud/InGameHud   net/minecraft/client/gui/hud/InGameHud$renderOverlay   Lnet/minecraft/client/gui/hud/InGameHud;renderOverlay(Lnet/minecraft/util/Identifier;F)V 
